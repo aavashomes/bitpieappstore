@@ -159,7 +159,8 @@ playersRef.on("child_added", function(data, prevChildKey) {
  $("#enter").append(" <div class='column'>"+" <div class='card'>"
 + "<img src="+newPlayer.Logo+" style='width:35%;margin-left:auto;margin-right:auto'></img>"
 +"<br><h6><b>"+newPlayer.ApkName+"</b></h6>"+
-"<h6 style='color:black'>" +newPlayer.Verified+"</h6>"+
+newPlayer.Verified+
+//"<h6 style='color:black'>" +newPlayer.Verified+"</h6>"+
 "<button class='btn'><i class='fa fa-download'></i> Download</button>"+
 "<button type='button' style='margin:2px'class='btn btn-info' data-toggle='modal' data-target=#"+newPlayer.ApkName+">Know More</button>"+
   "<div class='modal fade' id="+newPlayer.ApkName+" role='dialog'>"+
