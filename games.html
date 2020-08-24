@@ -155,12 +155,38 @@ var playersRef = firebase.database().ref("Games/");
 playersRef.on("child_added", function(data, prevChildKey) {
    var newPlayer = data.val();
    console.log("NAME: " + newPlayer.Name);
-   console.log("EMAIL: " + newPlayer.Email);
-$("#name").append(" <div class='column'>"+" <div class='card'>"
-+ "<img src="+newPlayer.Url+" style='width:30%;margin-left:auto;margin-right:auto'></img>"
-+"<h6><b>"+newPlayer.Name+"</b></h6>"+
-"<br><br><button class='btn'><i class='fa fa-download'></i> Download</button>"+  
+   console.log("EMAIL: " + newPlayer.Email);console.log("Verified: " + newPlayer.Verified);
+ $("#enter").append(" <div class='column'>"+" <div class='card'>"
++ "<img src="+newPlayer.Logo+" style='width:35%;margin-left:auto;margin-right:auto'></img>"
++"<br><h6><b>"+newPlayer.ApkName+ "</b></h6>"+
+newPlayer.Verified+
+//"<p style='color:  #20af52'><span style='font-size:10px;'>Verified &#10004;</span></p>"+
+//"<label class='btn-success'>"+newPlayer.Verified+"</label>"+
+
+"<button class='btn'><i class='fa fa-download'></i> Download</button>"+
+"<button type='button' style='margin:2px'class='btn btn-info' data-toggle='modal' data-target=#"+newPlayer.ApkName+">Know More</button>"+
+  "<div class='modal fade' id="+newPlayer.ApkName+" role='dialog'>"+
+    "<div class='modal-dialog'>"+
+    
+      "<div class='modal-content'>"+
+        "<div class='modal-body'>"+
+           "<img src="+newPlayer.Logo+" style='width:40%;margin-left:auto;margin-right:auto'></img>"+
+"<br><br><h6 style='color:black'>"+newPlayer.ApkName+"</h6>"+
+"<h6><b>Description :"+newPlayer.Description+"</b></h6>"+
+"<h6><b>Developer :"+newPlayer.OwnerName+"</b></h6>"+
+ "<img src="+newPlayer.Screen1+" style='width:40%;margin-left:auto'></img>"+
+ "<img src="+newPlayer.Screen2+" style='width:40%;margin-left:auto'></img>"+
+ "<br><br><button class='btn'><i class='fa fa-download'></i> Install</button>"+
+        "</div>"+
+       " <div class='modal-footer'>"+
+          "<button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>"+
+       " </div>"+
+      "</div>"+
+      
+    "</div>"+
+  "</div>"+  
   "</div>"+"</div>");
+
 });
 var playersRef = firebase.database().ref("Games/");
 
@@ -168,7 +194,7 @@ playersRef.on("child_added", function(data, prevChildKey) {
    var newPlayer = data.val();
    console.log("NAME: " + newPlayer.Name);
    console.log("EMAIL: " + newPlayer.Email);
- $("#enter").append(" <div class='column'>"+" <div class='card'>"
+ $("#name").append(" <div class='column'>"+" <div class='card'>"
 + "<img src="+newPlayer.Url+" style='width:30%;margin-left:auto;margin-right:auto'></img>"
 +"<br><br><h6><b>"+newPlayer.Name+"</b></h6>"+"<br>"+
 "<br><br><h6><b>"+newPlayer.Description+"</b></h6>"+
@@ -203,7 +229,7 @@ playersRef.on("child_added", function(data, prevChildKey) {
 						<h1 class="text-white">
 								
 							</h1>	
-						<h6  class="text-white"class="justify-content-center"id="name"></h6>
+						<h6  class="text-white"class="justify-content-center"id="enter"></h6>
        
 						</div>
 					</div>
