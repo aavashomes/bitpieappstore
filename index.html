@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
   <head>
     <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,3 +35,715 @@
 </script>
 
 </html>
+ -->
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="logo.jpg">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>BITPIE APPSTORE</title>
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background : #f1f2f3  url('3.gif')
+no-repeat center;
+z-index: 99999;
+}
+</style>
+
+<style>
+body {
+  padding: 25px;
+
+}
+
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+
+
+
+</style>
+<script>
+$(document).ready(function(){
+  $("button[name='dark']").click(function(){
+   if( $( "body" ).hasClass( "body" )  ) 
+   {
+   $( "body" ).removeClass( "body" );
+   $( ".inner-switch" ).text( "OFF" );
+    $("span").removeClass("blue");
+$("span1").removeClass("span1")
+   }
+   if($("h1, h2, p, h3, h6").hasClass("blue"))
+   {
+   $( "h1, h2, p, h3, h6" ).removeClass( "blue" );
+   $( ".inner-switch" ).text( "OFF" );
+    $("span").removeClass("blue");
+   }
+      if($("div").hasClass("important"))
+   {
+   $( "div" ).removeClass( "important" );
+   $( ".inner-switch" ).text( "OFF" );
+    $("span").removeClass("blue");
+   }
+   else{
+    $( "body" ).addClass( "body" );
+    $("h1, h2, p, h3, h6").addClass("blue");
+    $("div").addClass("important");
+     $("span").addClass("span");
+$(".lnr lnr-laptop-phone").addClass("span1");
+     $( ".inner-switch" ).text( "ON" );
+    }
+  });
+});
+
+</script>
+<style>
+.body
+{
+background-color:black;
+}
+.important {
+ 
+  color:white;
+}
+
+.blue {
+  color: white;
+}
+.span{color: green;}
+.span1{color:white;}
+</style>
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+		
+		  <header id="header" style="background-color:#052f4e">
+		    <div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><img src="logo2.png" style="width:13%;border-radius:50%"></img>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+
+			          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			          <li><a href="category.html" style="color:white"><i class="fa fa-cart-plus"></i> Category</a></li>  
+					          
+			          <li><a href="category.html" style="color:white"><i class="fa fa-check-circle-o"></i> Top Charts</a></li>      
+			           <li><a href="category.html" style="color:white"><i class="fa fa-bookmark"></i> Recommended</a></li>  
+				   <li><a href="https://developer.bitpie.vercel.app/" style="color:white"><i class="fa fa-code"></i> Developer Console</a></li>  
+ <li><button name="dark" style="background-color:transparent;border:none;border-radius:25px"><img src="icons/learning.png " style="width:39px"></button>
+ <span class="inner-switch">OFF</span></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			
+			
+							<br><br><br>
+							
+                            
+			
+			<!-- End banner Area -->
+
+			<!-- Start home-about Area -->
+<!--
+			<section class="home-about-area pt-120">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 home-about-left">
+							<img class="img-fluid" src="img/about-img.png" alt="">
+						</div>
+						<div class="col-lg-5 col-md-6 home-about-right">
+							<h6>About Me</h6>
+							<h1 class="text-uppercase">Personal Details</h1>
+							<p>
+								Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+							</p>
+							<a href="#" class="primary-btn text-uppercase">View Full Details</a>
+						</div>
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png
+					</div>
+				</div>	
+			</section>
+--><br><br><br><br><br><br>
+			
+<!-- Games SLIDER -->
+<div class="container text-center my-3">
+    <h2 class="font-weight-light">Categories</h2><br>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                           <a href="education.html"> <img class="img-fluid" src="icons/images (23).png" style="width:40%;margin-left:auto;margin-right:auto;border-radius:50%"></a>
+							<h4>Education</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                       <a href="games.html"> <img class="img-fluid" src="icons/images (21).png" style="width:40%;margin-left:auto;margin-right:auto"></a>
+							<h4>Games</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                          <img class="img-fluid" src="icons/enter.png" style="width:40%;margin-left:auto;margin-right:auto">
+							<h4>Entertainment</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                           <img class="img-fluid" src="icons/images (27).png" style="width:40%;margin-left:auto;margin-right:auto">
+							<h4>Social</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="icons/produc2.png" style="width:40%;margin-left:auto;margin-right:auto">
+							<h4>Productivity</h4>
+                        </div>
+                    </div>
+                </div>
+  <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="icons/health.png" style="border-radius:50%;width:40%;margin-left:auto;margin-right:auto">
+							<h4>Health & Fitness</h4>
+                        </div>
+                    </div>
+                </div>
+  <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="icons/unnamed (3).png" style="width:40%;margin-left:auto;margin-right:auto">
+							<h4>Beauty</h4>
+                        </div>
+                    </div>
+                </div>
+<div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="icons/beauty.png" style="width:40%;margin-left:auto;margin-right:auto">
+							<h4>Art & Design</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                         <img class="img-fluid" src="icons/mag.png" style="width:40%;margin-left:auto;margin-right:auto">
+							<h4>News & Magazines</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+   
+</div>
+<br><br>
+
+
+<style>
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+
+</style>
+
+<script>
+$('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+</script>
+<style>
+.btn3 {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 13px;
+height:40px;margin:auto
+}
+
+/* Darker background on mouse-over */
+.btn3:hover {
+  background-color: RoyalBlue;
+}
+</style>
+
+<div class="container">
+	<div class="row">
+		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+<h2> Entertainment</h2>
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                        <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                              <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                              <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                             <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" style="width:42%"></img>
+                        <p>Instagram</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                              <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+               
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+        </div>
+	</div>
+<style>
+.button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}</style>
+
+</div><a href="#"style="float:right" class="button">See All &#8594</a>
+<br><br><br><br>
+<div class="container">
+	<div class="row">
+<h2 >Games</h2>
+		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                        <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                           <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                              <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/candy-crush-logo_0.png" style="width:42%"></img>
+                        <p>Candy Crush</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                            <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                           <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                             <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                             <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" style="width:42%"></img>
+                        <p>Instagram</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                              <img src="https://img5.apk.tools/img/00joOr4-fyAcaDT0sedX9spf0Qw_vTENlnUbw5hkhg1RBth7xegLW8OymVAdWOAjAaA8=s300" style="width:42%"></img>
+                        <p>Pubg Mobile</p>
+                        <button class='btn3'><i class='fa fa-download'></i> Download</button><br>
+                        <br><label style="background-color: #0b8927 ">Verified <i class='fa fa-check-circle'></i></label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>
+        </div>
+	</div></div>
+</div><a href="#"style="float:right" class="button">See All &#8594</a>
+<style>
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background: #1b4e66 ; color:white;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+</style>
+<script>
+$(document).ready(function () {
+    var itemsMainDiv = ('.MultiCarousel');
+    var itemsDiv = ('.MultiCarousel-inner');
+    var itemWidth = "";
+
+    $('.leftLst, .rightLst').click(function () {
+        var condition = $(this).hasClass("leftLst");
+        if (condition)
+            click(0, this);
+        else
+            click(1, this)
+    });
+
+    ResCarouselSize();
+
+
+
+
+    $(window).resize(function () {
+        ResCarouselSize();
+    });
+
+    //this function define the size of the items
+    function ResCarouselSize() {
+        var incno = 0;
+        var dataItems = ("data-items");
+        var itemClass = ('.item');
+        var id = 0;
+        var btnParentSb = '';
+        var itemsSplit = '';
+        var sampwidth = $(itemsMainDiv).width();
+        var bodyWidth = $('body').width();
+        $(itemsDiv).each(function () {
+            id = id + 1;
+            var itemNumbers = $(this).find(itemClass).length;
+            btnParentSb = $(this).parent().attr(dataItems);
+            itemsSplit = btnParentSb.split(',');
+            $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+            if (bodyWidth >= 1200) {
+                incno = itemsSplit[3];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 992) {
+                incno = itemsSplit[2];
+                itemWidth = sampwidth / incno;
+            }
+            else if (bodyWidth >= 768) {
+                incno = itemsSplit[1];
+                itemWidth = sampwidth / incno;
+            }
+            else {
+                incno = itemsSplit[0];
+                itemWidth = sampwidth / incno;
+            }
+            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).find(itemClass).each(function () {
+                $(this).outerWidth(itemWidth);
+            });
+
+            $(".leftLst").addClass("over");
+            $(".rightLst").removeClass("over");
+
+        });
+    }
+
+
+    //this function used to move the items
+    function ResCarousel(e, el, s) {
+        var leftBtn = ('.leftLst');
+        var rightBtn = ('.rightLst');
+        var translateXval = '';
+        var divStyle = $(el + ' ' + itemsDiv).css('transform');
+        var values = divStyle.match(/-?[\d\.]+/g);
+        var xds = Math.abs(values[4]);
+        if (e == 0) {
+            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            $(el + ' ' + rightBtn).removeClass("over");
+
+            if (translateXval <= itemWidth / 2) {
+                translateXval = 0;
+                $(el + ' ' + leftBtn).addClass("over");
+            }
+        }
+        else if (e == 1) {
+            var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            $(el + ' ' + leftBtn).removeClass("over");
+
+            if (translateXval >= itemsCondition - itemWidth / 2) {
+                translateXval = itemsCondition;
+                $(el + ' ' + rightBtn).addClass("over");
+            }
+        }
+        $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+    }
+
+    //It is used to get some elements from btn
+    function click(ell, ee) {
+        var Parent = "#" + $(ee).parent().attr("id");
+        var slide = $(Parent).attr("data-slide");
+        ResCarousel(ell, Parent, slide);
+    }
+
+});
+</script>
+
+<br><br>
+		
+       
+            <!-- End footer Area -->		
+  <!-- loader -->
+  <!-- loader -->
+<script>
+var pre=document.getElementById('loader');
+
+function stoploader()
+{
+pre.style.display = 'none';
+}
+</script>
+
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>			
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+    		<script src="js/jquery.tabs.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>	
+            <script src="js/isotope.pkgd.min.js"></script>			
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/simple-skillbar.js"></script>							
+			<script src="js/owl.carousel.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
